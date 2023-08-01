@@ -1,8 +1,15 @@
 .home {
     display: flex;
     flex-direction: column;
+    margin: 20px;
+    gap: 20px;
 }
-
+.home > nav{
+    font-size: 64px;
+    color: var(--color-title);
+    font-family: var(--font-display);
+    font-weight: 700;
+}
 .caixa {
     display: flex;
     flex-direction: row;
@@ -14,15 +21,26 @@ img {
 }
 .image{
     height: 600px;
-    width: 300px;
+    width: 260px;
     overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    background-color: #d9d9d9;
+    width: 14px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--background-scroll);
 }
 .titulo{
     font-size: 32px;
     color: var(--color-brown);
+    font-family: var(--font-display);
+    font-weight: 700;
 }
 .textos{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-family: var(--font-primary);
+    font-weight: 400;
 }

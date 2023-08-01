@@ -1,0 +1,24 @@
+.Contato{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+.Contato > nav{
+    font-size: 64px;
+    color: var(--color-title);
+    font-weight: 700;
+    font-family: var(--font-display);
+}
+.caixa3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.caixa3 > div {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
