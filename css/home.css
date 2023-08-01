@@ -1,0 +1,28 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+img {
+    width: 900px;
+    height: 600px;
+}
+.image{
+    height: 600px;
+    width: 300px;
+    overflow-x: hidden;
+}
+.titulo{
+    font-size: 32px;
+    color: var(--color-brown);
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
