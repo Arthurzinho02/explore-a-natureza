@@ -18,8 +18,14 @@
     font-size: 16px;
     font-weight: 400;
 }
-.caixa2 > nav{
+.caixa2 > section nav{
     color: var(--color-brown);
     border-bottom: 1px solid var(--color-border-faq);
     font-size: 24px;
+}
+.js-faq section div{
+    display: none;
+}
+.js-faq section div.active{
+    display: block;
 }

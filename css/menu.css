@@ -5,7 +5,7 @@ header{
     margin: 20px 20px 20px 60px;
     background-color: var(--background-green);
     height: 50px;
-    width: var(--width);
+    max-width: var(--width);
     color: var(--color-white);
     padding: 10px;
     font-family: var(--font-primary);
