@@ -50,3 +50,20 @@ img {
 .js-conteudo section.active{
     display: block;
 }
+
+
+@media screen and (max-width:720px) {
+    .js-conteudo section{
+        display: block;
+    }
+
+    .image{
+        display: none;
+    }
+    .home > nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+    }
+}

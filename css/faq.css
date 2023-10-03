@@ -29,3 +29,16 @@
 .js-faq section div.active{
     display: block;
 }
+@media screen and (max-width:720px) {           
+    
+    .FAQ > .titulo{
+        display: flex;
+        font-size: 50px;
+        color: var(--color-title);
+        font-weight: 700;
+        font-family: var(--font-display)
+    }
+    .caixa2 > section nav{
+        font-size: 18px;
+    }
+}

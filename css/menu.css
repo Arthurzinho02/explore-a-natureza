@@ -18,9 +18,47 @@ header > div{
     align-items: center;
     gap: 5px;
 }
+header > .menu{
+    background-color: #000000 ;
+    border-radius: 4px;
+    padding: 5px;
+}
+
 .login{
     background-color: var(--background);
     border-radius: 4px;
     padding: 5px;
     color: var(--color-brown);
 }
+
+.js-menu .menu{
+    display: none;
+}
+
+@media screen and (max-width:720px) {
+    .js-menu div{
+        display: none;
+    }
+    .js-menu .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .js-menu.active{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        height: 220px;
+    }
+    .js-menu div.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
+
+
