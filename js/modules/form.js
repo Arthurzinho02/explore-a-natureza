@@ -14,4 +14,8 @@ export default function form(){
         localStorage.setItem(dados.email, JSON.stringify(dados))
         alert("Dados salvo com sucesso!")
     })
+
+    
+
+
 }
