@@ -24,7 +24,8 @@ header > .menu{
     padding: 5px;
 }
 
-.login{
+
+.login:hover{
     background-color: var(--background);
     border-radius: 4px;
     padding: 5px;

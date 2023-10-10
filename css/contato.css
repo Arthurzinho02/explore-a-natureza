@@ -22,8 +22,18 @@
     flex-direction: column;
     gap: 20px;
 }
+
+
 @media screen and (max-width:720px) {
     .Contato > nav{
-        font-size: 50px;
+        font-size: 45px;
     }
+    iframe {
+        width: 250px;
+        height: 200px;
+    }
+    .caixa3 {
+        display: flex;
+        flex-direction: column;
+    }    
 }

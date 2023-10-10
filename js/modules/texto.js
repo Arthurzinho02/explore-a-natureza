@@ -4,7 +4,6 @@ export default function texto(){
     const textos = document.querySelectorAll('.js-conteudo section');
     const largura = window.innerWidth;
 
-    console.log(largura)
     function ativarConteudo(indice){
         textos.forEach((item) =>{
             item.classList.remove('active')
