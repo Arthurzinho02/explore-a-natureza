@@ -1,12 +1,11 @@
 export default function form(){
-    const form = document.querySelector('.form')
+    const form = document.querySelector('.modal-forms')
     const dados = {}
 
     function pegarvaiform(event){
         dados[event.target.name] = event.target.value
         console.log(dados)
     }
-
 
     form.addEventListener('change', pegarvaiform)
     form.addEventListener('submit', (event) => {
@@ -15,7 +14,7 @@ export default function form(){
         alert("Dados salvo com sucesso!")
     })
 
-    
+
 
 
 }
