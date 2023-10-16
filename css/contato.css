@@ -1,21 +1,23 @@
-.Contato{
+
+.Contato{ /* Configura e deixa as informações em coluna, titulo/nav e a caixa3 */
     display: flex;
     flex-direction: column;
     margin: 20px;
     gap: 20px;
 }
-.Contato > nav{
+
+.Contato > nav{ /* Configura o titulo*/
     font-size: 64px;
     color: var(--color-title);
     font-weight: 700;
     font-family: var(--font-display);
 }
-.caixa3{
+.caixa3{ /*COnfigura o mapa e a informações */
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.caixa3 > div {
+.caixa3 > div { /*Congigura as informações */
     font-family: var(--font-primary);
     font-weight: 400;
     display: flex;
@@ -25,14 +27,14 @@
 
 
 @media screen and (max-width:720px) {
-    .Contato > nav{
+    .Contato > nav{ /*Diminui o tamanho do titulo */
         font-size: 45px;
     }
-    iframe {
+    iframe { /*Diminui o tamanho do mapa */
         width: 250px;
         height: 200px;
     }
-    .caixa3 {
+    .caixa3 { /*Coloca as informções abaixo do mapa */
         display: flex;
         flex-direction: column;
     }    

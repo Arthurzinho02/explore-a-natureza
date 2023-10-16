@@ -1,4 +1,4 @@
-header{
+header{ /*Configuração do menu*/
     display: flex;
     align-items: center;
     gap: 15px;
@@ -12,47 +12,47 @@ header{
     font-weight: 700;
     font-size: 14px;
 }
-header > div{
+header > div{ /*Configuração dos textos/botões */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-header > .menu{
+header > .menu{ /*Configuração especifica para aquele que tem classe .menu */
     background-color: #000000 ;
     border-radius: 4px;
     padding: 5px;
 }
 
 
-.login:hover{
+.login:hover{ /*Quando o usuario passar o mouse por cima ficará deste modo */
     background-color: var(--background);
     border-radius: 4px;
     padding: 5px;
     color: var(--color-brown);
 }
 
-.js-menu .menu{
+.js-menu .menu{ /* Esconde a div com .menu*/
     display: none;
 }
 
 @media screen and (max-width:720px) {
-    .js-menu div{
+    .js-menu div{ /*Esconde todas as dives*/
         display: none;
     }
-    .js-menu .menu{
+    .js-menu .menu{ /*Mostra a div com classe .menu */
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5px;
     }
-    .js-menu.active{
+    .js-menu.active{ /*Caso ouver a classe active ele irá ficar dessa forma */
         display: flex;
         align-items: start;
         flex-direction: column;
         height: 220px;
     }
-    .js-menu div.active{
+    .js-menu div.active{ /*Caso ouver a classe active ele irá ficar dessa forma */
         display: flex;
         justify-content: center;
         align-items: center;

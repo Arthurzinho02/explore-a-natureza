@@ -1,16 +1,16 @@
-.FAQ{
+.FAQ{ /*Configura a estrura geral do faq */
     margin: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.FAQ > .titulo{
+.FAQ > .titulo{ /*COnfigura o titulo */
     font-size: 64px;
     color: var(--color-title);
     font-weight: 700;
     font-family: var(--font-display)
 }
-.caixa2{
+.caixa2{ /*Configura os textos do faq */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -18,27 +18,27 @@
     font-size: 16px;
     font-weight: 400;
 }
-.caixa2 > section nav{
+.caixa2 > section nav{ /* Configura as perguntas do faq*/
     color: var(--color-brown);
     border-bottom: 1px solid var(--color-border-faq);
     font-size: 24px;
 }
-.js-faq section div{
+.js-faq section div{ /* Some com as resposta do faq*/
     display: none;
 }
-.js-faq section div.active{
+.js-faq section div.active{ /*Quando aparecer a classe active ele vai aparecer */
     display: block;
 }
 @media screen and (max-width:720px) {           
     
-    .FAQ > .titulo{
+    .FAQ > .titulo{ /* Diminui o titulo*/
         display: flex;
         font-size: 50px;
         color: var(--color-title);
         font-weight: 700;
         font-family: var(--font-display)
     }
-    .caixa2 > section nav{
+    .caixa2 > section nav{ /*Diminui o tamanho das perguntas */
         font-size: 18px;
     }
 }
