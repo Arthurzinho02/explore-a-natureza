@@ -38,7 +38,20 @@
     display: flex;
     animation: showModal .3s forwards;
 }
+.Obrigado{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-green);
+    color: #ffffff;
 
+}
+
+.Obrigado.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @keyframes showModal{
     from{
         transform: translate(-50%, -50%) scale(0);

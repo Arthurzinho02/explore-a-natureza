@@ -1,7 +1,8 @@
 export default function form(){
     const form = document.querySelector('.js-modal')
+    const obrigado = document.querySelector('.Obrigado')
     const dados = {}
-   
+    localStorage.clear()
 
     if (localStorage.getItem("email") === null) {
         form.classList.add("active");
@@ -20,8 +21,7 @@ export default function form(){
     document.querySelector(".modal-forms").addEventListener("submit", (event) => {
     event.preventDefault();
     localStorage.setItem("email", JSON.stringify(dados.email))
-    alert("Dados salvos com sucesso")
-    form.classList.remove("active");
+    obrigado.classList.add('active')
     });
 
     // adiciona um listener para o botão de fechar
@@ -29,7 +29,7 @@ export default function form(){
     // esconde o elemento
     form.classList.remove("active");
     });
-
+    
     if (localStorage.getItem("email") === null) {
     setTimeout(() => {
         form.classList.add("active");

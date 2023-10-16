@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <!-- Estrutura do Form -->
+    <!-- FOi usado input para guardar o a variavel e o temos a classe "extra" js-model para realizar no css e no js as configurações -->
     <div class=" modal js-modal">
         <span class="material-symbols-outlined modal-close">
             close
@@ -21,9 +23,14 @@
             <label for="">Email:</label>
             <input name="email" type="email" placeholder="Insira seu email" required="">
             <input type="submit" value="Enviar">
+            <div class="Obrigado">
+                Obrigado por enviar seu email
+            </div>
         </form>
         <div id="msg"></div>
     </div>
+
+    <!-- Na header temos a estrutura do menu, onde encontraremos os "botões", temos a classe na header js-menu para realizar a configuração -->
     <header class="js-menu">
         <div class="menu">MENU<span class="material-symbols-outlined">
                 menu
@@ -43,9 +50,11 @@
             </span>LOGIN</div>
 
     </header>
+    <!-- Seção onde encontramos a lista de imagens e os texto da home -->
     <section class="home">
         <nav>EXPLORE A NATUREZA!🌲</nav>
         <div class="caixa">
+            <!-- Div onde se econtra a lista de imagens -->
             <div>
                 <ul class="image js-list">
                     <li><img src="./img/natureza.jpg" alt="Florestas"></li>
@@ -54,6 +63,7 @@
                     <li><img src="./img/Florestas.jpg" alt="praias"></li>
                 </ul>
             </div>
+            <!-- Div dos textos com js-conteudo para realizar a configuração no css e no js -->
             <div class="textos js-conteudo">
                 <section class="active">
                     <nav class="titulo"><span class="material-symbols-outlined">
@@ -127,8 +137,10 @@
             </div>
         </div>
     </section>
+    <!-- Faq -->
     <section class="FAQ">
         <nav class="titulo">FAQ💬..........</nav>
+        <!-- Dividido em seções e dentro uma nav e uma div onde se encontra o texto. -->
         <div class="caixa2 js-faq">
             <section>
                 <nav>Por que é importante explorar a natureza? <span>▼</span></nav>
@@ -214,8 +226,10 @@
             </section>
         </div>
     </section>
+    <!-- Seção do Contato -->
     <section class="Contato">
         <nav>CONTATO 📞</nav>
+        <!-- Dividido no mapa e onde se encontra as informações -->
         <div class="caixa3">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.313639680127!2d-46.893952125765935!3d-23.195237848241508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2697ac7191fd%3A0x300031e85e07f9e8!2sEscola%20Senai%20Conde%20Alexandre%20Siciliano!5e0!3m2!1spt-BR!2sbr!4v1690890130336!5m2!1spt-BR!2sbr"
