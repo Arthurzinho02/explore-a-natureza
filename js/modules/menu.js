@@ -1,20 +1,18 @@
 export default function menu(){
     const menuOri = document.querySelector('.js-menu')
-    const menu = document.querySelectorAll('.js-menu .menu')
+    const menu = document.querySelector('.js-menu .menu')
     const menuspan = document.querySelector('.js-menu .menu span')
     const menu2 = document.querySelectorAll('.js-menu div')
 
-    menu.forEach((item) =>{
-        item.addEventListener('click', () =>{
+        menu.addEventListener('click', () =>{ // Ao clicar no menu ele ira percorrer a nodelist que contem as divs
             menu2.forEach((item) =>{
-                menuOri.classList.toggle('active')
-                item.classList.toggle('active')
-                if (menuOri.classList.contains('active') == true){
+                menuOri.classList.toggle('active') //Pode ativar e desativar as configuração do menu
+                item.classList.toggle('active') //Ativa e desativa a configuração da div
+                if (menuOri.classList.contains('active') == true){ //Se conter a classe active ele ira mudar para close (x), se não muda ou continua para menu
                     menuspan.innerText = "close"
-                }else{
+                }else{ 
                     menuspan.innerText = "menu"
                 }
             })
-        } )
-    })
-}
+        })
+    }
